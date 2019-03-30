@@ -1,12 +1,26 @@
 
-1/ t?o git init : c?u n?i gi?a local và remote : git init ( l?n sau ð? t?o git init r?i th? ko c?n t?o n?a ) 
-            ->(cart)
-local reposi -> stage -> remote reposi ( c?u trúc git ) 
-              1        2
+1/ create file git init : connect between local and remote : git init ( l?n sau ð? t?o git init r?i th? ko c?n t?o n?a ) 
 
-(1) thêm file t? local vào stage : git add .filename ( ch? thêm nx g? thay ð?i vào cart)
+	       git remote add origin https://github.com/Gthuy12/demogit-Sgroup.git  (chon reponsitory de push code//) 
+2/
+
+            ->(cart)
+local reposi -> stage -> remote reposi ( git construc ) 
+             (1)     (2)
+
+(1) thêm file t? local vào stage : git add .filename ( add file need to push) or git add . (add all file ) add to cart, then add to stage
 				  git commit -m "comment code" ( thêm chính th?c vào stage; comment: thay ð?i nh?ng g?)
 					EX: "add header (done) " n?u ð? code xong ho?c "add header (cont) " 
 
-2/ git pull origin Branch-name ( kéo nhánh trên git remote reposi v? ð? so sánh khác nhau ) 
+(2) git pull origin Branch-name ( kéo nhánh trên git remote reposi v? ð? so sánh khác nhau ): n?u có xung ð?t -> conflict  / ko có xung ð?t -> push code 
 
+    git push origin branch-name ( push code lên remote reposi )
+
+
+
+3/
+git config --list ( ki?m tra ðang s? d? ) 
+
+git checkout -b branchname ( di chuyen nhánh hien tai qua nhánh moi  )//lenh o local  
+
+git branch (liet ke ten nhanh ) 
