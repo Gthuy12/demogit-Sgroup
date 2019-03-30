@@ -1,5 +1,4 @@
-checkGit global setup:
-
+checkGit global setup:123456
 git config --global user.name "Le Viet Long"
 git config --global user.email "vilagondk@gmail.com"
 
