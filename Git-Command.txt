@@ -1,0 +1,49 @@
+checkGit global setup:
+
+git config --global user.name "Le Viet Long"
+git config --global user.email "vilagondk@gmail.com"
+
+Create a new repository:
+
+git clone https://gitlab.com/longly151/abc.git
+cd abc
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+
+Existing folder:
+
+cd existing_folder
+git init
+git remote add origin https://gitlab.com/longly151/abc.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository:
+
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/longly151/abc.git
+git push -u origin --all
+git push -u origin --tags
+
+
+Branch:
+
+git branch -D <Branch name> : Delete branch
+git checkout -b <Branch name>: Create branch
+git checkout <Branch name>: Change branch
+git push origin --delete <Branch name> : Delete branch Server
+
+Update code:
+
+git add .
+git commit -m "<content>"
+git pull origin dev
+git push origin <branch>
+
+git fetch origin long
+git reset --hard : Delete code after commit
